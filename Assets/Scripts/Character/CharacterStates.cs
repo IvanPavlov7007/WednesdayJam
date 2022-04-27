@@ -7,12 +7,17 @@ public class CharacterStates : MonoBehaviour
 
     StateMachine stateMachine;
     TimeFlowManager timeFlowManager;
-    
+    AudioSource aud;
+
+    [SerializeField]
+    AudioClip hit, block;
+
     // Start is called before the first frame update
     void Start()
     {
         stateMachine = GetComponentInChildren<StateMachine>();
         timeFlowManager = TimeFlowManager.Instance;
+        aud = GetComponentInChildren<AudioSource>();
     }
 
     void Update()
@@ -25,6 +30,15 @@ public class CharacterStates : MonoBehaviour
 
     public void hitCharacter()
     {
+        if(stateMachine.currentState == stateMachine.defaultState) // no shield
+        {
+            aud.PlayOneShot(hit);
+        }
+        else
+        {
+            aud.PlayOneShot(block);
+        }
+
         setCharacterState("normal");
     }
 

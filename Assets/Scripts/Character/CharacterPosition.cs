@@ -9,6 +9,10 @@ public class CharacterPosition : MonoBehaviour
     [SerializeField]
     Node initialNode;
 
+    AudioSource aud;
+    [SerializeField]
+    AudioClip moveSound;
+
     public event CharacterMovemenAction onCharacterMoved;
 
     public Node CurrentNode { get { return currentNode; } private set { currentNode = value; } }
@@ -20,7 +24,7 @@ public class CharacterPosition : MonoBehaviour
 
     void Start()
     {
-        
+        aud = GetComponentInChildren<AudioSource>();
     }
 
     // Update is called once per frame
@@ -34,7 +38,10 @@ public class CharacterPosition : MonoBehaviour
         currentNode = n;
         transform.position = n.transform.position;
         if (onCharacterMoved != null)
+        {
+            aud.PlayOneShot(moveSound);
             onCharacterMoved(n);
+        }
     }
 }
 
