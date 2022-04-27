@@ -8,6 +8,7 @@ public class CharacterStates : MonoBehaviour
     StateMachine stateMachine;
     TimeFlowManager timeFlowManager;
     AudioSource aud;
+    Animator anim;
 
     [SerializeField]
     AudioClip hit, block;
@@ -18,6 +19,7 @@ public class CharacterStates : MonoBehaviour
         stateMachine = GetComponentInChildren<StateMachine>();
         timeFlowManager = TimeFlowManager.Instance;
         aud = GetComponentInChildren<AudioSource>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -33,6 +35,7 @@ public class CharacterStates : MonoBehaviour
         if(stateMachine.currentState == stateMachine.defaultState) // no shield
         {
             aud.PlayOneShot(hit);
+            anim.SetTrigger("hit");
         }
         else
         {

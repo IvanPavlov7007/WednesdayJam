@@ -5,7 +5,7 @@ using UnityEngine;
 public class DangerMaker : MonoBehaviour
 {
     DangerousNode[] nodes;
-    float frequency = 2f;
+    public float frequency = 10f;
 
     void Start()
     {
