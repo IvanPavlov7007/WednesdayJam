@@ -6,6 +6,12 @@ public class PlayerInput : MonoBehaviour
 {
     CharacterPosition pos;
 
+    public static PlayerInput Instance { get; private set; }
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     void Start()
     {
         pos = GetComponent<CharacterPosition>();
@@ -26,7 +32,7 @@ public class PlayerInput : MonoBehaviour
     void MoveToNode(float x)
     {
         var nextN = pos.CurrentNode.GetNextNode(new Vector2(x, 0f));
-        if(nextN != null)
+        if(nextN != null && TimeFlowManager.Instance.makePlayerMove())
             pos.moveToNode(nextN);
     }
 }

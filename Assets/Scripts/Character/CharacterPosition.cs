@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CharacterPosition : MonoBehaviour
 {
     Node currentNode;
     [SerializeField]
     Node initialNode;
+
+    public event CharacterMovemenAction onCharacterMoved;
 
     public Node CurrentNode { get { return currentNode; } private set { currentNode = value; } }
 
@@ -30,5 +33,9 @@ public class CharacterPosition : MonoBehaviour
     {
         currentNode = n;
         transform.position = n.transform.position;
+        if (onCharacterMoved != null)
+            onCharacterMoved(n);
     }
 }
+
+public delegate void CharacterMovemenAction(Node newNode);
