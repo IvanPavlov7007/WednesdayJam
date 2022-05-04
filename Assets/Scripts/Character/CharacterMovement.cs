@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class CharacterPosition : MonoBehaviour
+public class CharacterMovement : MonoBehaviour
 {
     Node currentNode;
-    [SerializeField]
-    Node initialNode;
 
     AudioSource aud;
     [SerializeField]
@@ -19,7 +17,6 @@ public class CharacterPosition : MonoBehaviour
 
     private void Awake()
     {
-        moveToNode(initialNode);
     }
 
     void Start()

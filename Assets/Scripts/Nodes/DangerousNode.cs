@@ -18,7 +18,7 @@ public class DangerousNode : MonoBehaviour
     {
         node = GetComponent<Node>();
         stateMachine = GetComponentInChildren<StateMachine>();
-        PlayerInput.Instance.GetComponent<CharacterPosition>().onCharacterMoved += onPlayerMoved;
+        PlayerInput.Instance.GetComponent<CharacterMovement>().onCharacterMoved += onPlayerMoved;
     }
 
     public void onPlayerMoved(Node n)

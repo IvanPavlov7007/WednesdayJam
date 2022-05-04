@@ -12,6 +12,8 @@ public class TimeFlowManager : MonoBehaviour
 
     public static TimeFlowManager Instance { get; set; }
 
+    public event TurnAction onPlayerMakeTurn;
+
     private void Awake()
     {
         Instance = this;
@@ -19,11 +21,14 @@ public class TimeFlowManager : MonoBehaviour
 
     public bool playerCanMakeNextMove { get { return playerNextInputTimer > playerNextInputDelay; } }
 
-    public bool makePlayerMove()
+    public bool makePlayerTurn(TurnOption turn)
     {
         if (playerCanMakeNextMove)
         {
             playerNextInputTimer = 0f;
+            turn.Execute();
+            if (onPlayerMakeTurn != null)
+                onPlayerMakeTurn(turn);
             return true;
         }
         return false;
@@ -34,3 +39,5 @@ public class TimeFlowManager : MonoBehaviour
         playerNextInputTimer += Time.deltaTime;
     }
 }
+
+public delegate void TurnAction(TurnOption turn);

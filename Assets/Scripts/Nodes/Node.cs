@@ -5,9 +5,12 @@ using UnityEngine;
 public class Node : MonoBehaviour
 {
     public List<Node> connectedNodes = new List<Node>();
+    
+    public GameState turnOptions { get; private set; }
 
     void Start()
     {
+        turnOptions = GetComponent<GameState>();
     }
 
     public void ConnectWithNode(Node another)

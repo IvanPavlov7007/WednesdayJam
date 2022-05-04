@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6641396606248410513
 Transform:
   m_ObjectHideFlags: 0
@@ -446,8 +446,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6641396607176695509}
   - component: {fileID: 6641396607176695508}
-  - component: {fileID: 6641396607176695511}
   - component: {fileID: 6641396607176695506}
+  - component: {fileID: 116940989}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -483,20 +483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc77bd8e92f8d5e48b358a444f67609d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialNode: {fileID: 0}
-  moveSound: {fileID: 8300000, guid: 1e60905cccb805340a0a91ee30e1dc59, type: 3}
---- !u!114 &6641396607176695511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6641396607176695510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f989d2bd90df73c41b9fdc18904b1eaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  moveSound: {fileID: 0}
 --- !u!114 &6641396607176695506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,6 +498,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hit: {fileID: 8300000, guid: 27b3895b5e3358f4493da9d53694ab11, type: 3}
   block: {fileID: 8300000, guid: ba62a79e92a6c8f458387580ac637193, type: 3}
+--- !u!95 &116940989
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6641396607176695510}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f16882ec5ec332349b7380ff7fd4c5b4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6641396607447807681
 GameObject:
   m_ObjectHideFlags: 0

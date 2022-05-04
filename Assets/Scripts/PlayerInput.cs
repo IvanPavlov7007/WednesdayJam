@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    CharacterPosition pos;
+    CharacterMovement pos;
 
     public static PlayerInput Instance { get; private set; }
     private void Awake()
@@ -14,7 +14,7 @@ public class PlayerInput : MonoBehaviour
 
     void Start()
     {
-        pos = GetComponent<CharacterPosition>();
+        pos = GetComponent<CharacterMovement>();
     }
 
     void Update()
@@ -32,7 +32,7 @@ public class PlayerInput : MonoBehaviour
     void MoveToNode(float x)
     {
         var nextN = pos.CurrentNode.GetNextNode(new Vector2(x, 0f));
-        if(nextN != null && TimeFlowManager.Instance.makePlayerMove())
-            pos.moveToNode(nextN);
+        //if(nextN != null && TimeFlowManager.Instance.makePlayerTurn())
+        //    pos.moveToNode(nextN);
     }
 }

@@ -24,10 +24,10 @@ public class CharacterStates : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.W) && timeFlowManager.makePlayerMove())
-        {
-            stateMachine.ChangeState("shield");
-        }
+        //if(Input.GetKeyDown(KeyCode.W) && timeFlowManager.makePlayerTurn())
+        //{
+        //    stateMachine.ChangeState("shield");
+        //}
     }
 
     public void hitCharacter()
