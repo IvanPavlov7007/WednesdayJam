@@ -4,14 +4,14 @@ ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
+      74: 7255288845342212269
+    second: fishyrmature|ArmatureAction
   - first:
-      74: -1422011007694221501
-    second: Armature|ArmatureAction.001
+      74: 4841645050399239327
+    second: fishyrmature|ArmatureAction.001
   - first:
-      74: 6093225430303232669
-    second: allesmove
+      74: -7087990753731512000
+    second: fishyani
   externalObjects: {}
   materials:
     materialImportMode: 0
@@ -23,7 +23,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName: 
+    motionNodeName: <Root Transform>
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
@@ -41,8 +41,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: allesmove
-      takeName: Armature|ArmatureAction.002
+      name: fishyani
+      takeName: fishyrmature|welcheani?
       internalID: 0
       firstFrame: 0
       lastFrame: 267
@@ -65,8 +65,52 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: fishy
+        weight: 0
+      - path: fishyrmature
+        weight: 0
+      - path: fishyrmature/ball
+        weight: 1
+      - path: fishyrmature/ball/ball_end
+        weight: 1
+      - path: fishyrmature/front
+        weight: 1
+      - path: fishyrmature/front/lj
+        weight: 1
+      - path: fishyrmature/front/lj/lj_end
+        weight: 1
+      - path: fishyrmature/front/midfin
+        weight: 1
+      - path: fishyrmature/front/midfin/midfin_end
+        weight: 1
+      - path: fishyrmature/front/uj
+        weight: 1
+      - path: fishyrmature/front/uj/uj_end
+        weight: 1
+      - path: fishyrmature/idklol
+        weight: 1
+      - path: fishyrmature/idklol/idklol_end
+        weight: 1
+      - path: fishyrmature/mid
+        weight: 1
+      - path: fishyrmature/mid/botfin
+        weight: 1
+      - path: fishyrmature/mid/botfin/botfin_end
+        weight: 1
+      - path: fishyrmature/mid/hind
+        weight: 1
+      - path: fishyrmature/mid/hind/hindhind
+        weight: 1
+      - path: fishyrmature/mid/hind/hindhind/hindhind_end
+        weight: 1
+      - path: fishyrmature/mid/topfin
+        weight: 1
+      - path: fishyrmature/mid/topfin/topfin_end
+        weight: 1
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     isReadable: 0
@@ -120,7 +164,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: 
+    rootMotionBoneName: mid
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
@@ -128,7 +172,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
