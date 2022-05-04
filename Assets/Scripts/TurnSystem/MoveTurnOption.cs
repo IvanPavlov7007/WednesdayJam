@@ -13,11 +13,12 @@ public class MoveTurnOption : TurnOption
         thisNode = GetComponentInParent<Node>();
     }
 
-    public override void Execute()
+    public override bool Execute()
     {
         if (otherNode == null)
-            return;
+            return false;
         Player.instance.MoveTo(otherNode);
+        return true;
         //do changes for las node here
     }
 }

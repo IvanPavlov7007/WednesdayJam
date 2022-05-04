@@ -26,10 +26,12 @@ public class TimeFlowManager : MonoBehaviour
         if (playerCanMakeNextMove)
         {
             playerNextInputTimer = 0f;
-            turn.Execute();
-            if (onPlayerMakeTurn != null)
-                onPlayerMakeTurn(turn);
-            return true;
+            if (turn.Execute())
+            {
+                if (onPlayerMakeTurn != null)
+                    onPlayerMakeTurn(turn);
+                return true;
+            }
         }
         return false;
     }
