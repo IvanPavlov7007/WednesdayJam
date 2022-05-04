@@ -93,7 +93,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627f5d18c311add4cb25fa2aaa5f7f0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  translation: {x: 0, y: -1, z: 0}
+  translation: {x: 0, y: -2, z: 0}
+--- !u!114 &5466851281753929825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3018546463033546337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7ba313fc3032cb47889f170bce74187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zRotation: 10
+  duration: 0.2
 --- !u!1001 &8249949978173012709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -104,7 +118,7 @@ PrefabInstance:
     - target: {fileID: 6600515397267369092, guid: 472157f7baa974e47a6228c5a2a767af,
         type: 3}
       propertyPath: m_Name
-      value: Falling Shard
+      value: Falling Shard Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7083477224767291470, guid: 472157f7baa974e47a6228c5a2a767af,
         type: 3}

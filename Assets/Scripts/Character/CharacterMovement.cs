@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Pixelplacement;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class CharacterMovement : MonoBehaviour
     public void moveToNode(Node n)
     {
         currentNode = n;
-        transform.position = n.transform.position;
+        Tween.Position(transform, n.transform.position, 0.2f, 0f);
         if (onCharacterMoved != null)
         {
             aud.PlayOneShot(moveSound);
