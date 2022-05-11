@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour
     }
     void Start()
     {
-        contrainer.parent = PlayerMovement.Instance.transform;
+        contrainer.parent = PlayerContinuousInput.Instance.transform;
     }
 
     // Update is called once per frame

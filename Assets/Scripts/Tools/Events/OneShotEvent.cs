@@ -10,7 +10,7 @@ public class OneShotEvent : MonoBehaviour
 
     protected virtual void Start()
     {
-        player = PlayerInput.Instance.transform;
+        player = PlayerDiscreteInput.Instance.transform;
     }
     protected bool played = false;
 

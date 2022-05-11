@@ -17,7 +17,7 @@ public class MoveTurnOption : TurnOption
     {
         if (otherNode == null)
             return false;
-        Player.instance.MoveTo(otherNode);
+        TurnBasedPlayer.instance.MoveTo(otherNode);
         return true;
         //do changes for las node here
     }

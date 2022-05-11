@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class TurnBasedPlayer : MonoBehaviour
 {
-    public static Player instance { get; private set; }
+    public static TurnBasedPlayer instance { get; private set; }
 
-    public PlayerInput input { get; private set; }
-    public CharacterMover characterPosition { get; private set; }
+    public PlayerDiscreteInput input { get; private set; }
+    public CharacterMover characterMover { get; private set; }
     public PlayerState playerGameState { get; private set; }
 
 
@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
             throw new UnityException("Another player exists");
         instance = this;
 
-        characterPosition = GetComponent<CharacterMover>();
+        characterMover = GetComponent<CharacterMover>();
         playerGameState = GetComponent<PlayerState>();
     }
 
@@ -29,13 +29,13 @@ public class Player : MonoBehaviour
 
     public void Initialise(Node n)
     {
-        characterPosition.moveToNode(n);
+        characterMover.moveToNode(n);
         playerGameState.changeState(n.GetComponent<GameState>());
     }
 
     public void MoveTo(Node n)
     {
-        characterPosition.moveToNode(n);
+        characterMover.moveToNode(n);
         playerGameState.changeState(n.turnOptions);
     }
 

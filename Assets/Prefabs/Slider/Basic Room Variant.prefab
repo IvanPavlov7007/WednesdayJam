@@ -11,8 +11,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 17.39143, y: 1, z: 10}
-  m_Center: {x: 0.2456665, y: -0.5, z: 0}
+  m_Size: {x: 17.5, y: 1, z: 10}
+  m_Center: {x: 0, y: -0.5, z: 0}
 --- !u!1001 &1700660519670174326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92,7 +92,7 @@ PrefabInstance:
     - target: {fileID: 1821526906255839391, guid: 3d1e0f6214bbbd343917e28690bd6e6c,
         type: 3}
       propertyPath: m_Name
-      value: Basic Room
+      value: Basic Room Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3068320156869096335, guid: 3d1e0f6214bbbd343917e28690bd6e6c,
         type: 3}

@@ -7,6 +7,6 @@ public class SetInitNode : MonoBehaviour
     public Node initalNode;
     private void Start()
     {
-       GetComponent<Player>().Initialise(initalNode);
+       GetComponent<TurnBasedPlayer>().Initialise(initalNode);
     }
 }

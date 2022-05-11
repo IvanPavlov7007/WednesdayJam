@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInput : MonoBehaviour
+public class PlayerDiscreteInput : MonoBehaviour
 {
     CharacterMover pos;
 
-    public static PlayerInput Instance { get; private set; }
+    public static PlayerDiscreteInput Instance { get; private set; }
     private void Awake()
     {
         Instance = this;
