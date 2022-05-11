@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    CharacterMovement pos;
+    CharacterMover pos;
 
     public static PlayerInput Instance { get; private set; }
     private void Awake()
@@ -14,7 +14,7 @@ public class PlayerInput : MonoBehaviour
 
     void Start()
     {
-        pos = GetComponent<CharacterMovement>();
+        pos = GetComponent<CharacterMover>();
     }
 
     void Update()

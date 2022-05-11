@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     public static Player instance { get; private set; }
 
     public PlayerInput input { get; private set; }
-    public CharacterMovement characterPosition { get; private set; }
+    public CharacterMover characterPosition { get; private set; }
     public PlayerState playerGameState { get; private set; }
 
 
@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
             throw new UnityException("Another player exists");
         instance = this;
 
-        characterPosition = GetComponent<CharacterMovement>();
+        characterPosition = GetComponent<CharacterMover>();
         playerGameState = GetComponent<PlayerState>();
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using Pixelplacement;
 
-public class CharacterMovement : MonoBehaviour
+public class CharacterMover : MonoBehaviour
 {
     Node currentNode;
 
