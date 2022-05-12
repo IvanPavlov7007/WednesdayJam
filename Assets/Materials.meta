@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Materials.meta
 guid: 6388ceffdc51a5348af637fdb8674b98
 folderAsset: yes
+========
+guid: a5438ffda8cb2754886d51621ee87dfb
+>>>>>>>> c0c987b7bd0a71265a32ca1187c2fa083c9d8b2c:Assets/Scenes/SliderGame/AssetTester.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
