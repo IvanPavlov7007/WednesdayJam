@@ -4,92 +4,26 @@ ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
-      74: -2037422930333224823
-    second: Plane.009|arive-boden
+      74: 2381836748272573299
+    second: mc nla arive-arma-stop
   - first:
-      74: 3647573581748479195
-    second: Plane.009|ArmatureAction
+      74: 3201518521597931477
+    second: mc unm2-RIGHT.002
   - first:
-      74: -5105980401256963786
-    second: Plane.009|ForceAction
+      74: -8104403434722730192
+    second: mc brems.001
   - first:
-      74: 5264625682303787966
-    second: Plane.009|GPencilAction.001
+      74: -4861792824958216500
+    second: mc coock.003
   - first:
-      74: 2648209473896822282
-    second: Plane.009|GPencilAction.003
+      74: -741033578768036463
+    second: mc pew-botth.004
   - first:
-      74: -6063209689924294114
-    second: Plane.009|lite-boom
+      74: -6318282262862164355
+    second: mc IDEL_FInal
   - first:
-      74: -1307390537453257131
-    second: Plane.009|run-floor
-  - first:
-      74: -1084930419371673112
-    second: Plane.009|viechAction
-  - first:
-      74: 2631277285787117902
-    second: mc-skel|arive-arma
-  - first:
-      74: 2200690922785542983
-    second: mc-skel|arive-arma-stop
-  - first:
-      74: 2832125335934155751
-    second: mc-skel|arive-boden
-  - first:
-      74: 7510655354835454401
-    second: mc-skel|ArmatureAction
-  - first:
-      74: 4902086331829896959
-    second: mc-skel|brems
-  - first:
-      74: -7535309568685711594
-    second: mc-skel|coock
-  - first:
-      74: -6747477770272858894
-    second: mc-skel|coock.001
-  - first:
-      74: 7803242120540101665
-    second: mc-skel|ForceAction
-  - first:
-      74: -1609998013598064174
-    second: mc-skel|GPencilAction.001
-  - first:
-      74: 4797822358588467166
-    second: mc-skel|GPencilAction.003
-  - first:
-      74: -1396298029770548313
-    second: mc-skel|IDEL_FInal
-  - first:
-      74: 6591180179642495873
-    second: mc-skel|idle
-  - first:
-      74: -4201484003640348952
-    second: mc-skel|lite-boom
-  - first:
-      74: -3070956010845349148
-    second: mc-skel|pew-botth
-  - first:
-      74: 6977370527472077886
-    second: mc-skel|pew-left
-  - first:
-      74: 8117186683026476146
-    second: mc-skel|pew-rite
-  - first:
-      74: -8115291096449319813
-    second: mc-skel|rrunm.002
-  - first:
-      74: -6075027532448125797
-    second: mc-skel|run-floor
-  - first:
-      74: 6281404940429973251
-    second: mc-skel|runm2-RIGHT
-  - first:
-      74: -7726480366861981625
-    second: mc-skel|viechAction
-  - first:
-      74: 3596335140375299021
-    second: mc-skel|zero
+      74: 8639223834854924606
+    second: mc arive-arma-stop
   externalObjects: {}
   materials:
     materialImportMode: 0
@@ -119,8 +53,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: mc-skel|arive-arma
-      takeName: mc-skel|arive-arma
+      name: mc arive-arma-stop
+      takeName: nla arive-arma-stop
       internalID: 0
       firstFrame: 0
       lastFrame: 23
@@ -148,8 +82,37 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: mc-skel|brems
-      takeName: mc-skel|brems
+      name: mc unm2-RIGHT.002
+      takeName: nla unm2-RIGHT.002
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: mc brems.001
+      takeName: nla brems.001
       internalID: 0
       firstFrame: 0
       lastFrame: 14
@@ -177,8 +140,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: mc-skel|coock.001
-      takeName: mc-skel|coock.001
+      name: mc coock.003
+      takeName: nla coock.003
       internalID: 0
       firstFrame: 0
       lastFrame: 26
@@ -206,8 +169,37 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: mc-skel|IDEL_FInal
-      takeName: mc-skel|IDEL_FInal
+      name: mc pew-botth.004
+      takeName: nla pew-botth.004
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: mc IDEL_FInal
+      takeName: IDEL_FInal
       internalID: 0
       firstFrame: 0
       lastFrame: 68
@@ -217,7 +209,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -230,95 +222,116 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: mc-skel|pew-botth
-      takeName: mc-skel|pew-botth
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 23
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: mc-skel|runm2-RIGHT
-      takeName: mc-skel|runm2-RIGHT
-      internalID: 0
-      firstFrame: 12
-      lastFrame: 36
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: mc-skel|zero
-      takeName: mc-skel|zero
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arrs
+        weight: 0
+      - path: Cube.003
+        weight: 0
+      - path: Cube.004
+        weight: 0
+      - path: lleegs
+        weight: 0
+      - path: mc-skel
+        weight: 1
+      - path: mc-skel/bdon
+        weight: 1
+      - path: mc-skel/bdon/bdon_end
+        weight: 1
+      - path: mc-skel/fersa.l
+        weight: 1
+      - path: mc-skel/fersa.l/fersa.l_end
+        weight: 1
+      - path: mc-skel/fersa.r
+        weight: 1
+      - path: mc-skel/fersa.r/fersa.r_end
+        weight: 1
+      - path: mc-skel/root
+        weight: 1
+      - path: mc-skel/root/arm.pole.l
+        weight: 1
+      - path: mc-skel/root/arm.pole.l/arm.pole.l_end
+        weight: 1
+      - path: mc-skel/root/arm.pole.r
+        weight: 1
+      - path: mc-skel/root/arm.pole.r/arm.pole.r_end
+        weight: 1
+      - path: mc-skel/root/lowrot
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot/hed
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot/hed/hed_end
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot/toprot.001
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot/toprot.001/oberarm.r
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot/toprot.001/oberarm.r/unterarm.r
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot/toprot.001/oberarm.r/unterarm.r/unterarm.r_end
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot/toprot.002
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot/toprot.002/oberarm.l
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot/toprot.002/oberarm.l/unterarm.l
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot/toprot.002/oberarm.l/unterarm.l/unterarm.l_end
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot/torso
+        weight: 1
+      - path: mc-skel/root/lowrot/toprot/torso/torso_end
+        weight: 1
+      - path: mc-skel/root/pelves
+        weight: 1
+      - path: mc-skel/root/pelves/pelves_end
+        weight: 1
+      - path: mc-skel/root/pole.l
+        weight: 1
+      - path: mc-skel/root/pole.l/pole.l_end
+        weight: 1
+      - path: mc-skel/root/pole.r
+        weight: 1
+      - path: mc-skel/root/pole.r/pole.r_end
+        weight: 1
+      - path: mc-skel/root/unterarm.trg.l
+        weight: 1
+      - path: mc-skel/root/unterarm.trg.l/unterarm.trg.l_end
+        weight: 1
+      - path: mc-skel/root/unterarm.trg.r
+        weight: 1
+      - path: mc-skel/root/unterarm.trg.r/unterarm.trg.r_end
+        weight: 1
+      - path: mc-skel/root/upperleg.l
+        weight: 1
+      - path: mc-skel/root/upperleg.l/lowerleg.l
+        weight: 1
+      - path: mc-skel/root/upperleg.l/lowerleg.l/fet.l
+        weight: 1
+      - path: mc-skel/root/upperleg.l/lowerleg.l/fet.l/fet.l_end
+        weight: 1
+      - path: mc-skel/root/upperleg.l/lowerleg.l/fetarget.l
+        weight: 1
+      - path: mc-skel/root/upperleg.l/lowerleg.l/fetarget.l/fetarget.l_end
+        weight: 1
+      - path: mc-skel/root/upperleg.r
+        weight: 1
+      - path: mc-skel/root/upperleg.r/lowerleg.r
+        weight: 1
+      - path: mc-skel/root/upperleg.r/lowerleg.r/fet.r
+        weight: 1
+      - path: mc-skel/root/upperleg.r/lowerleg.r/fet.r/fet.r_end
+        weight: 1
+      - path: mc-skel/root/upperleg.r/lowerleg.r/fetarget.r
+        weight: 1
+      - path: mc-skel/root/upperleg.r/lowerleg.r/fetarget.r/fetarget.r_end
+        weight: 1
+      - path: Plane.009
+        weight: 0
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     isReadable: 0
