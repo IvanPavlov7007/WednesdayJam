@@ -11,6 +11,7 @@ public class CharacterMovement : MonoBehaviour
     protected Rigidbody rb;
     protected Animator anim;
     protected SpriteRenderer sr;
+    protected Transform tr;
 
     public bool facingRight;
 
@@ -21,19 +22,22 @@ public class CharacterMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        sr = GetComponentInChildren<SpriteRenderer>();
+        tr = GetComponent<Transform>();
+        //sr = GetComponentInChildren<SpriteRenderer>();
     }
     protected void Update()
     {
-        anim.SetBool("walk", direction.magnitude > 0.001f);
-        if (direction.magnitude > 0.001f)
-            facingRight = !(Vector3.Angle(direction, Vector3.right) > 90f);
-        sr.flipX = !facingRight;
+        anim.SetBool("isMoving", direction.magnitude > 0.001f);
+        //if (direction.magnitude > 0.001f)
+            //facingRight = !(Vector3.Angle(direction, Vector3.right) > 90f);
+           //tr.localScale = new Vector3(0,0,-1); //flip some shit
+           //sr.flipX = !facingRight;
     }
 
     protected private void FixedUpdate()
     {
-        var velocity = direction * (isRunning ? runningSpeed : speed);
+        var velocity = direction * speed;
+        //  var velocity = direction * (isRunning ? runningSpeed : speed);
         rb.velocity = CommonTools.yPlaneVector(velocity, rb.velocity.y);
     }
 }
