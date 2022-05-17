@@ -34,7 +34,7 @@ AvatarMask:
   - m_Path: mc-skel/fersa.r/fersa.r_end
     m_Weight: 0
   - m_Path: mc-skel/root
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: mc-skel/root/arm.pole.l
     m_Weight: 1
   - m_Path: mc-skel/root/arm.pole.l/arm.pole.l_end

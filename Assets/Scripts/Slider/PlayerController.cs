@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         LookInDirection(lastKnownDirection);
-        if (Input.GetKeyDown(KeyCode.LeftControl)) Fire(lastKnownDirection);
+        if (Input.GetKeyDown(KeyCode.LeftControl)) Fire(lastKnownDirection, 40);
     }
 
     protected void Start()
@@ -159,15 +159,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Fire(Vector3 direction)
+    private void Fire(Vector3 direction, float bulletSpeed)
     {
         anim.SetTrigger("pewTrigger");
         //anim.Play("pew");
         if (direction.x > 0) {
             sm.offset = new Vector3(Mathf.Abs(sm.offset.x), sm.offset.y, sm.offset.z);
-            sm.Shoot(tr.right * 20); }
+            sm.Shoot(tr.right * bulletSpeed); }
         else {
             sm.offset = new Vector3((-1) * Mathf.Abs(sm.offset.x), sm.offset.y, sm.offset.z);
-            sm.Shoot(tr.right * -20); }
+            sm.Shoot(tr.right * bulletSpeed * -1); }
     }
 }
