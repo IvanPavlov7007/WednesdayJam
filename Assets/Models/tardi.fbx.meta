@@ -41,13 +41,13 @@ ModelImporter:
     second: tardi-skel|wak
   - first:
       74: -8141977409584844592
-    second: headattac-nla
+    second: tardi-headattac-nla
   - first:
       74: 1878793260943947355
-    second: idel-nla
+    second: tardi-idel-nla
   - first:
       74: 2889523023423001481
-    second: wak-nla
+    second: tardi-wak-nla
   externalObjects: {}
   materials:
     materialImportMode: 0
@@ -77,7 +77,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: headattac-nla
+      name: tardi-headattac-nla
       takeName: headattac-nla
       internalID: 0
       firstFrame: 0
@@ -88,7 +88,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -106,7 +106,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: idel-nla
+      name: tardi-idel-nla
       takeName: idel-nla
       internalID: 0
       firstFrame: 0
@@ -117,7 +117,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -135,7 +135,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: wak-nla
+      name: tardi-wak-nla
       takeName: wak-nla
       internalID: 0
       firstFrame: 0
@@ -146,7 +146,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
